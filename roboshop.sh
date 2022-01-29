@@ -106,7 +106,7 @@ fi
 
 HEAD
 hostnamectl set-hostname $1
-disable-auto-shutdown
+#disable-auto-shutdown
 
 case $COMPONENT in
   frontend)
