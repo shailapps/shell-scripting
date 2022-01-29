@@ -42,6 +42,12 @@ App_User() {
     esac
 }
 
+InstallGit()
+{
+  sudo yum install git
+  git version
+}
+
 Service_Setup() {
     Print "Setup $COMPONENT SystemD Service"
     mv /home/roboshop/$COMPONENT/systemd.service /etc/systemd/system/$COMPONENT.service &>>$LOG_FILE
