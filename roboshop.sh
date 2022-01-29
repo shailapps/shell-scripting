@@ -105,7 +105,7 @@ fi
 
 
 HEAD
-set-hostname $1
+hostnamectl set-hostname $1
 disable-auto-shutdown
 
 case $COMPONENT in
