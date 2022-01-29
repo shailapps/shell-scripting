@@ -141,6 +141,13 @@ case $COMPONENT in
     Stat_Check $?
 
     ;;
+  
+InstallGit)
+
+    Print "Installation of git \t\t"
+    InstallGit
+  Stat_Check $?
+
   mongodb)
 
     Print "Setup Yum repos\t\t"
